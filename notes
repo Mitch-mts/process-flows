@@ -1,0 +1,84 @@
+Things to know 
+
+1. what is an interface 
+ - an interface is a class that facilitates abstraction whereby it defines the behaviour
+ that a concrete class must implement without specifying the implementation
+ - an interface is a blueprint of a class, it specifies what methods a class must implement and what fields it must have
+ - an interface is used to achieve abstraction and polymorphism i java programs
+ 
+2. what is the difference between user task and service task in camunda 
+- a service task (automated execution) does not require human interaction to execute processes whilst a user task requires
+human interaction to execute processes in a process model
+
+3. what is the difference between arrayList and list
+- a List is an interface, a generic data structure for storing a collection of objects an ArrayList is a concrete class
+that implements a List interface. It is a dynamic array that can grow and shrink as needed, it can store any number of elements
+- an Array is a data structure that can store a fixed/specified number of elements of the same type
+
+4. what is the static keyword used for in methods and variables
+- static variables are shared by all instances of a class, meaning that if you make any change to a static variable,
+the change will be visible to all instances that have that variable
+- static methods are associated with the class and can only be accessed using the class name
+
+5. what is big O notation
+- big O notation is used to classify algorithms according to how their run time or space requirements grow as the input size grows.
+- there are 3 types of big O notation
+    a) Best case: The best case is the fastest the algorithm can possibly run.
+    b) Average case: The average case is the average run time of the algorithm over all possible inputs.
+    c) Worst case: The worst case is the slowest the algorithm can possibly run.
+- examples of notations
+    O(1): Constant time. The algorithm will take the same amount of time to run, regardless of the input size.
+    O(log n): Logarithmic time. The algorithm will take twice as long to run on an input of size 2n as it does to run on an input of size n.
+    O(n): Linear time. The algorithm will take twice as long to run on an input of size 2n as it does to run on an input of size n.
+    O(n log n): N log n time. The algorithm will take four times as long to run on an input of size 2n as it does to run on an input of size n.
+    O(n²): Quadratic time. The algorithm will take four times as long to run on an input of size 2n as it does to run on an input of size n.
+    O(n³): Cubic time. The algorithm will take eight times as long to run on an input of size 2n as it does to run on an input of size n.
+    O(2^n): Exponential time. The algorithm will take twice as long to run on an input of size n+1 as it does to run on an input of size n.
+
+
+6. what is the difference between primary key and unique key
+- a primary key and a unique key are both constraints that are used to ensure the uniqueness of data in a database table 
+- a primary key is a column or set of columns that uniquely identifies each row in a table
+- primary keys can not have  null values and a table can only have one primary key 
+- a primary key is used to created a clustered index which is the fastest way to access data in a table
+- a unique key is a column or set of columns which can not have duplicate values within a table
+- a unique key can have null values and a table can have multiple unique keys 
+- unique key is used to create a non-clustered index which is slower than a clustered index
+
+7. why do we overwrite the hashcode method when we override the equals method in a class
+- We override the hashCode() method when we override the equals() method in a class because the two methods are closely related. 
+- The equals() method is used to compare two objects and determine if they are equal. 
+- The hashCode() method is used to generate a hash code for an object, which is a unique identifier for the object.
+- The Java documentation states that the hashCode() method should be overridden whenever the equals() method is overridden. 
+- This is because the hashCode() method should be consistent with the equals() method. 
+- In other words, if two objects are equal, then they should have the same hash code.
+
+8. what is the difference between == and .equals() in java
+- both the == operator and the .equals() method in Java are used to compare two objects.
+- the == operator compares the references of two objects meaning that it returns true if the two objects are the same object in memory, and it returns false if they are not.
+- The .equals() method, on the other hand, compares the values of two objects meaning that it returns true if the two objects have the same values, and it returns false if they do not.
+
+9. what is an abstract class
+- and abstract class is a class that can not be instantiated directly, it is used to define common behaviour for
+a group of related classes
+
+10. what is camunda
+- camunda is an open-source workflow and decision automation platform that allows organisations to execute, model,
+execute and monitor business processes
+
+- unit tests
+- what is the difference between interface and abstract class
+- describe OOP concepts
+- what is dependency inject and inversion of control
+- describe SOLID and DRY principles in clean code 
+
+things to do
+- unit tests 
+- integration tests
+- kafka
+- OOP concepts implementation
+- clean code principles
+- access modifiers (private, protected, public, default)
+
+
+- to open camunda modeler in linux go to the directory for camunda and run ./camunda-modeler
